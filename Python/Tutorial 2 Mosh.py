@@ -1,4 +1,3 @@
-''' 
 #Arithmetic operations
 print(10 ** 3) #we get integer   + - / //=integer *  **=power
 x = 10
@@ -6,25 +5,17 @@ x = x+3
 x += 3 #augmented assignment operator increment
 print(x)  
 
-'''
-
-'''
 #Operator Precedence
 x = (10 + 3) * 2 ** 2
 print(x)  #exponentiton, * or /, then + or -
 x = (2 + 3) * 10 - 3
-'''
 
-'''
 #Math Functions
 import math #math module
-
 x = 2.501
 print(round(x))
 print(abs(-2.9))
-'''
 
-'''
 #If statements
 is_hot = True
 is_cold = False
@@ -36,7 +27,6 @@ elif is_cold:
     print("Wear warm clothes")
 else:
     print("It's a lovely day")
-
 print("Enjoy your day")
 
 #exercise 
@@ -47,9 +37,8 @@ if has_good_credit:
 else:
     down_payment = price * 0.2
 print(f"Down payment: ${down_payment}")
-''' 
+ 
 
-'''
 #Logical operators  01:06:32
 has_high_income = True   # and = 1,1   # or = 0,1
 has_good_credit = False 
@@ -60,8 +49,7 @@ has_good_credit = True
 has_criminal_record = True 
 if has_high_income and not has_criminal_record:
     print("Eligible for Loan")
-''' 
-
+ 
 #comparison operators 01:11:25 
 temperature = 25
 if temperature > 30: #>=, ==, =<, <, >, !=
