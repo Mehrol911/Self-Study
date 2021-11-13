@@ -1,4 +1,3 @@
-'''
 #while loops 01:20:43    
 i = 5
 while i >= 1:
@@ -17,9 +16,7 @@ total = 0
 for price in prices:
     total += price
 print(f"Total: {total}")
-'''
 
-'''
 #nested loops
 for x in range(4):
     for y in range(3):  #inner loop
@@ -32,9 +29,7 @@ for x_count in numbers:
     for count in range(x_count):
         output += 'x'
     print(output)
-'''
 
-'''
 #lists 
 names = ['John', 'Bob', 'Mosh', 'Sarah', 'Mary']
 names[0]='Jon'
@@ -60,7 +55,6 @@ matrix = [
 for row in matrix:
     for item in row:
         print(item)
-'''
 
 #list methods
 numbers = [5, 2, 1, 5, 7, 4]
