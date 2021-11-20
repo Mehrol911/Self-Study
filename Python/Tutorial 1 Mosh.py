@@ -2,6 +2,8 @@
 print("Mekhrol Bazarov")
 print('*' * 10)     #10 times *
 
+#-----------------------------------------------------------------------
+
 #variables  00:13:03
 price = 10            #integer
 rating = 4.9          #floating point number
@@ -13,10 +15,14 @@ full_name = 'John Smith'
 age = 20
 is_new = True
 
+#-----------------------------------------------------------------------
+
 #Receiving input
 name = input('What is your name? ')
 color = input('What is your favourite color? ')
 print(name + ' likes ' + color)
+
+#-----------------------------------------------------------------------
 
 #Type Conversion
 birth_year = input('Birth year: ')
@@ -29,6 +35,7 @@ weight_lbs=input('Weight (lbs): ')
 weight_kg = 0.45*float(weight_lbs)
 print(weight_kg)
 
+#-----------------------------------------------------------------------
 
 #strings
 course = 'Python for Beginners'
@@ -39,6 +46,8 @@ print(another)
 name = 'Jennifer'
 print(name[1:-1])   #ennife  excluded r
 
+#-----------------------------------------------------------------------
+
 #formatted strings
 first = 'John'
 last = 'Smith'
@@ -46,6 +55,8 @@ message = first + ' [' + last + '] is a coder'
 msg = f'{first} [{last}] is a coder'
 print(message)
 print(msg)
+
+#-----------------------------------------------------------------------
 
 #string methods  00:40:50
 course = 'Python for Beginners'
