@@ -5,6 +5,8 @@ while i >= 1:
     i = i - 1
 print("Done")    
 
+#-----------------------------------------------------------------------
+
 #for loops  01:41:48
 for item in 'Python': #[numbers, names]
     print(item)
@@ -16,6 +18,8 @@ total = 0
 for price in prices:
     total += price
 print(f"Total: {total}")
+
+#-----------------------------------------------------------------------
 
 #nested loops
 for x in range(4):
@@ -29,6 +33,8 @@ for x_count in numbers:
     for count in range(x_count):
         output += 'x'
     print(output)
+
+#-----------------------------------------------------------------------
 
 #lists 
 names = ['John', 'Bob', 'Mosh', 'Sarah', 'Mary']
@@ -46,6 +52,8 @@ for number in numbers:
         max = number
 print(max)
 
+#-----------------------------------------------------------------------
+
 #2D lists
 matrix = [
     [1, 2, 3],
@@ -55,6 +63,8 @@ matrix = [
 for row in matrix:
     for item in row:
         print(item)
+
+#-----------------------------------------------------------------------
 
 #list methods
 numbers = [5, 2, 1, 5, 7, 4]
