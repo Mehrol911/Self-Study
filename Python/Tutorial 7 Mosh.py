@@ -4,6 +4,8 @@ numbers = (1, 2, 3) #it is tuple () not []
 print(numbers[0])
 print(numbers)
 
+#-----------------------------------------------------------------------
+
 #unpacking
 coordinates = (1, 2, 3) #x,y,z
 x = coordinates[0] 
@@ -12,6 +14,8 @@ z = coordinates[2]
 
 x, y, z = coordinates #exact the above code 
 print(x)
+
+#-----------------------------------------------------------------------
 
 #Dictionaries
 customer = { #key and value (also in java, value can be anything)
@@ -27,6 +31,8 @@ print(customer["name"])
 customer["Gender"] = "Male"
 print(customer.get("birthdate", "Jan 1 1980"))  # We get None means absence # adding default value
 print(customer["Gender"])
+
+#-----------------------------------------------------------------------
 
 #exercise
 phone = input("Phone: ")
