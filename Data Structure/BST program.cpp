@@ -1,7 +1,8 @@
 //https://youtu.be/V97oYgN9cIE?list=PLIY8eNdw5tW_zX3OCzX7NJ8bL1p6pWfgG
 //Binary Search Tree (BST) | Implementation(with Full Code) | Part 1 - Setup
-
 #include<iostream>
+#define SPACE 10
+
 using namespace std;
 
 class TreeNode
@@ -37,6 +38,24 @@ class BST{
     }
     
 };
+
+void insertNode(TreeNode *new_Node)
+{
+    
+}
+
+void print2D(TreeNode *r, int space)
+{
+    if (r == NULL) // Base case
+        return;
+    space += SPACE; // Increase distance between levels
+    print2D(r->right, space); // Process right child first
+    cout<<endl;
+    for(int i = SPACE; i < space; i++) // Print current node after space count
+        cout<<"";
+    cout<<r->value<<"\n";
+    print2D(r->left, space); // Process left child
+}
 
 int main()
 {
