@@ -1,5 +1,6 @@
 //https://youtu.be/V97oYgN9cIE?list=PLIY8eNdw5tW_zX3OCzX7NJ8bL1p6pWfgG
 //Binary Search Tree (BST) | Implementation(with Full Code) | Part 1 - Setup
+//
 #include<iostream>
 #define SPACE 10
 
@@ -39,9 +40,46 @@ class BST{
     
 };
 
-void insertNode(TreeNode *new_Node)
+void insertNode(TreeNode *new_node)
 {
-    
+    if (root==NULL) // problem here
+    {
+        root = new_node;
+        cout<<"Value Inserted as root node!"<<endl;
+    }
+    else
+    {
+        TreeNode *temp=root;
+        while(temp!=NULL)
+        {
+            if(new_node->value==temp->value)
+            {
+                cout<<"Value Already exist, Insert another value"<<endl;
+                return;
+            }
+            else if((new_node->value<temp->value)&&(temp->left==NULL))
+            {
+                temp->left=new_node;
+                cout<<"Value Inserted to the left!"<<endl;
+                break;
+            }
+            else if(new_node->value<temp->value)
+            {
+                temp = temp->left;
+            }
+            //-----------------------------------------
+            else if((new_node->value>temp->value)&&(temp->left==NULL))
+            {
+                temp->right=new_node;
+                cout<<"Value Inserted to the right!"<<endl;
+                break;
+            }
+            else //if(new_node->value>temp->value)
+            {
+                temp = temp->right;
+            }
+        }
+    }
 }
 
 void print2D(TreeNode *r, int space)
@@ -59,7 +97,8 @@ void print2D(TreeNode *r, int space)
 
 int main()
 {
-    int option;
+    BST obj;
+    int option, val;
     
     
     do
@@ -74,6 +113,8 @@ int main()
         cout<<"0.Exit Program"<<endl;
         
         cin>>option;
+        //Node n1 = new Node();
+        TreeNode *new_node = new TreeNode();
         
         switch(option)
         {
@@ -81,6 +122,11 @@ int main()
                 break;
             case 1:
                 cout<<"INSERT"<<endl;
+                cout<<"Enter VALUE of TREE NODE to INSERT in BST:";
+                cin>>val;
+                new_node->value=val; // problem here
+                obj,insertNode(new_node);
+                cout<<endl;
                 break;
             case 2:
                 cout<<"SEARCH"<<endl;
