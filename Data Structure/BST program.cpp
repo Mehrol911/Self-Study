@@ -135,7 +135,8 @@ int main()
                 cout<<"DELETE"<<endl;
                 break;
             case 4:
-                cout<<"PRINT and Traverse"<<endl;
+                cout<<"PRINT"<<endl;
+                obj.print2D(obj.root, 5);
                 break;
             case 5:
                 //cout<<"CLR SCR"<<endl;
