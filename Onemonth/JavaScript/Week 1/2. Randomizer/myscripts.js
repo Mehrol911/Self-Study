@@ -31,6 +31,7 @@ var randomNumber = Math.floor(Math.random()*friends.length);
 
 var barname = bars[randomNumber];
 var friendname = friends[randomNumber];
+document.write("<h2>You are visiting <strong>" + barname + "</strong> with <strong>" + friendname + "</strong>.</h2>");
 
     if (barname === "Xiva") {
     document.write('<img src="images/Xiva.jpg" width="800" height="400">')
@@ -64,5 +65,3 @@ var friendname = friends[randomNumber];
     }
     else {
       }
-
-document.write("<p>You are visiting <strong>" + barname + "</strong> with <strong>" + friendname + "</strong>.</p>");
