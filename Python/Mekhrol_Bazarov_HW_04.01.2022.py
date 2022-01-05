@@ -109,24 +109,18 @@ while True:
             9:'Sentabr',
             10:'Oktabr',
             11:'Noyabr',
-            12:'Dekabr'}
-            Kunlar_soni = {
-            oy_nomi[1]: 31,
-            oy_nomi[2]: 28 or 29,
-            31:'Mart',
-            30:'Aprel',
-            31:'May',
-            30:'Iyun',
-            31:'Iyul',
-            31:'Avgust',
-            30:'Sentabr',
-            31:'Oktabr',
-            30:'Noyabr',
-            31:'Dekabr'}
-
-            n = int(input('Oyning raqamini kiriting: '))
+            12:'Dekabr'
+            }
+            n = int(input('Oyning raqamini kiriting 1-12: '))
             print("Oy nomi: " + oy_nomi[n])
-            print("Kunlar Soni: " + f"{Kunlar_soni}")
+            if oy_nomi[n] == 'Yanvar' or 'Mart' or 'May' or 'Iyul' or 'Avgust' or 'Oktabr' or 'Dekabr':  
+                print(f"Kunlar Soni: {31}")
+            elif oy_nomi[n] == "Aprel" or "Iyun" or "Sentabr" or "Noyabr":
+                print(f"Kunlar Soni: {30}")
+            elif oy_nomi[n] ==  "Fevral":
+                print(f"Kunlar Soni: {28} yoki {29}")
+            else: 
+                print("")
     elif Tanlov == 9:
         # Kabisa yili
         yil = int(input("Yilni kiriting: "))
