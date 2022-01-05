@@ -140,7 +140,7 @@ while True:
         elif raqam1 != raqam2 and raqam2 != raqam3 and raqam1 !=raqam3:
                  print("Kiritilgan raqamlar orasida bir xil raqamlar yo'q ")      
         else: 
-             print("Kiritilgan raqamlar orasida bir xil ra5qamlar soni 2")           
+             print("Kiritilgan raqamlar orasida bir xil raqamlar soni 2")           
         break
     else:
         print("Xato tanlov!")
