@@ -8,11 +8,13 @@
   box-sizing: border-box; /* IE */
 }
 
+
+
 body {
   margin: 0;
   background: rgb(245, 245, 245);
   font-family: 'Open Sans', arial, sans-serif;
-  font-size: 0.875rem; 
+  font-size: 0.875rem;
   color: rgb(86, 90, 92);
 }
 
@@ -32,6 +34,7 @@ strong {
   font-weight: 600;
 }
 
+
 /*
  * Button styles
 */
@@ -50,13 +53,14 @@ strong {
 
 
 /*
- * Heading
+ * Heading 
 */
 
-h1{
-  font-size: 1.375rem;  
-  color: #666A6C
+h1 {
+  font-size: 1.375rem; /* 22px / 16px */
+  color: #666A6C;
 }
+
 
 
 /*
@@ -75,8 +79,10 @@ header .logo {
   width: 100%;
 }
 
+
+
 /*
- * INFO
+ * Info
 */
 
 .info {
@@ -130,7 +136,60 @@ header .logo {
   font-size: 1rem; /* 16px / 16px */
 }
 
+
+/*
+ * Details styles
+*/
+
+.details {
+  padding: 1.25rem;
+}
+
+.details h3 {
+  font-weight: bold;
+  font-size: 1rem;
+  text-align: center;
+  margin: 0.5rem 0 1.5rem 0;
+  color: rgb(86, 90, 92);
+}
+
+.details h4 {
+  margin-bottom: 0.625rem;
+}
+
+.details li {
+  margin-bottom: 0.3125rem;
+}
+
+.details section {
+  border-bottom: 1px solid rgb(220, 224, 224);
+  padding: 1rem 0 1.25rem 0;
+}
+
+.details .about {
+  font-size: 0.8125rem;
+  line-height: 1.375rem;
+  text-align: center;
+}
+
+.details .about p {
+  text-align: left;
+}
+
+.details .about a.contact {
+  margin: 0.9375rem 0; /* 15px / 16px */
+  display: block;
+}
+
+.details .photos img {
+  width: 100%;
+  display: block;
+  margin-bottom: .5rem;
+}
+
+
 @media only screen and (min-width: 1060px) {
+
 
   .container {
     width: 1040px;
@@ -181,4 +240,45 @@ header .logo {
     display: block;
     margin: .1875rem auto .1875rem; /* 3px / 16px */
   }
+
+
+  /*
+   * .details styles
+  */
+
+  .details .main {
+    width: 690px;
+  }
+
+  .details h4 {
+    width: 46px;
+  }
+
+  .details .about {
+    text-align: left;
+  }
+
+  .details .care .column, .details .games .column {
+    margin-right: 5.9rem;
+  }
+
+  .details .games li img {
+    padding-right: 0.5rem;
+  }
+
+  /*
+   * photo styles
+  */
+
+  .details .photos {
+    text-align: center;
+  }
+
+  .details .photos img {
+    display: inline;
+    width: 200px;
+    margin: 0 0.85rem;
+  }
+
+  
 }
